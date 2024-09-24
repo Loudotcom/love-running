@@ -117,30 +117,13 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text > h2, 
+#cover-text > h3 {
     color: #ffffff;
 
 }
 
 /* Reasons section */
-
-#circle-cover-bg {
-    background: url('../images/reasons-image.webp') no-repeat top center / cover;
-    height: 90vw;
-    width: 90vw;
-    margin-bottom: 20px;
-    /* Makes the square image into a circle */
-    border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
-}
-
-#benefits-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 #reasons {
     width: 90%;
     margin: 20px auto;
@@ -167,20 +150,37 @@ main {
     margin: 5px 0;
 }
 
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /* Makes the square image into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Meetup Times section */
 #times {
-    background: url("../images/dublin-city.webp") no-repeat center/cover;
-    /* Handles responsively without the need for media query */
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
     display: flex;
-    flex-wrap: wrap    
+    flex-wrap: wrap;
 }
 
 #times div {
     color: #fafafa;
-    background-color: rgba( 0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
-    /* This will not wrap on screens less than 400px wide.
+    /* This will not wrap on screens of less than 400px wide.
     Each div will expand to fill the available space on its row */
     flex-basis: 200px;
     flex-grow: 1;
@@ -271,7 +271,7 @@ main {
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover{
+    #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 }
